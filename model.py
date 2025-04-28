@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
+import seaborn as sns #plotting graphs.
 import pandas as pd
 
 file_name = "UPI_Fraud_Dataset_Expanded.csv"
@@ -11,7 +11,7 @@ x = df.iloc[:,:8].values
 y = df.iloc[:,8].values
 
 from sklearn.model_selection import train_test_split
-x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.3,random_state=42)
+x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.3,random_state=42) #the data into training (70%) and testing (30%) sets
 
 x_test.shape
 x_train.shape
